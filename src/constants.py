@@ -37,27 +37,27 @@ for s in server_channels:
 BOT_INVITE_URL = f"https://discord.com/api/oauth2/authorize?client_id={DISCORD_CLIENT_ID}&permissions=328565073920&scope=bot"
 
 MODERATION_VALUES_FOR_BLOCKED = {
-    "hate": 0.5,
-    "hate/threatening": 0.1,
-    "self-harm": 0.2,
-    "sexual": 0.5,
-    "sexual/minors": 0.2,
-    "violence": 0.7,
+    "hate": 0.8,
+    "hate/threatening": 0.98,
+    "self-harm": 0.8,
+    "sexual": 0.9,
+    "sexual/minors": 0.5,
+    "violence": 1.0,
     "violence/graphic": 0.8,
 }
 
 MODERATION_VALUES_FOR_FLAGGED = {
-    "hate": 0.4,
-    "hate/threatening": 0.05,
-    "self-harm": 0.1,
-    "sexual": 0.3,
-    "sexual/minors": 0.1,
-    "violence": 0.1,
-    "violence/graphic": 0.1,
+    "hate": 1,
+    "hate/threatening": 1,
+    "self-harm": 1,
+    "sexual": 1,
+    "sexual/minors": 1,
+    "violence": 1,
+    "violence/graphic": 1,
 }
 
 SECONDS_DELAY_RECEIVING_MSG = (
-    3  # give a delay for the bot to respond so it can catch multiple messages
+    0  # give a delay for the bot to respond so it can catch multiple messages
 )
 MAX_THREAD_MESSAGES = 200
 ACTIVATE_THREAD_PREFX = "💬✅"

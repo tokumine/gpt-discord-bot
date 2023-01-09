@@ -52,8 +52,9 @@ async def generate_completion_response(
             engine="text-davinci-003",
             prompt=rendered,
             temperature=1.0,
-            top_p=0.9,
-            max_tokens=512,
+            top_p=1.0,
+            max_tokens=3000,
+            frequency_penalty=0.2,
             stop=["<|endoftext|>"],
         )
         reply = response.choices[0].text.strip()
